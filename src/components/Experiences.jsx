@@ -12,20 +12,20 @@ function Experiences() {
             {
                 src: '/public/STUDYVERSE.png',
                 title: 'StudyVerse',
-                description: 'Custom description for the first image.',
+                description: 'A C# Desktop Application that proposes a streamlined approach to the Bachelor of Science in Computer Science Mentorship program. As a mentee-powered system, it allows students to post available mentorship requests based on their available time slots, where mentors can view and accept these requests.',
                 href: 'https://github.com/padastevefrancisking/StudyVerse'
             },
             {
                 src: '/public/VSUCOPP.png',
                 title: 'VSU - Competitive Online Programming Platform',
-                description: 'Another unique description here.',
+                description: 'The region\'s first of a kind - this platform is designed to manage and host competitive programming contests. It is a web-based platform powered by DomJudge and Docker that allows users to create, manage, and participate in programming contests.',
                 href: 'http://copp.vsu.edu.ph/'
             },
             {
                 src: '/public/REKINDLE.png',
                 title: 'Rekindle',
-                description: 'Description specific to this image.',
-                href: ''
+                description: 'Aimed to provide an immersive Viscan experience, Rekindle is a desktop game that allows players to explore the Viscan culture and heritage through a series of stories.',
+                href: 'https://github.com/Jhanez27/psyche'
             },
             {
                 src: 'https://images.unsplash.com/photo-1619080371491-144258310aa5',
