@@ -1,6 +1,8 @@
-function Experiences() {
+import '../App.css';
+
+function Experiences({id}) {
   return (
-    <div className="flex flex-col justify-center items-center bg-main-background pb-10">
+    <div id={id} className="flex flex-col justify-center items-center bg-main-background pb-10">
         <div className="flex items-center justify-center text-center py-8 px-4">
             <h1 className="text-4xl leading-tight mb-6 lato-bold text-main-color">
                 My Projects

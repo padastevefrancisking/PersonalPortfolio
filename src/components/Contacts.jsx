@@ -7,9 +7,9 @@ const icons = [
   { icon: 'bi-linkedin', count: 'Steve Francis King Pada', label: 'LinkedIn', link: 'https://www.linkedin.com/in/steve-francis-king-pada-2b7432327/' },
 ];
 
-function IconList() {
+function IconList({id}) {
   return (
-    <div className="flex h-auto w-full items-center justify-center pt-8 pb-6">
+    <div id={id} className="flex h-auto w-full items-center justify-center pt-8 pb-6">
       <ul className="flex gap-8 font-[Calibri]">
         {icons.map((item, index) => (
           <li
@@ -24,7 +24,7 @@ function IconList() {
               <span className="absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-[65%] text-[#161616] font-[bootstrap-icons] content-['\F229']" />
             </span>
             <a
-              href="#"
+              href= {item.link}
               className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white opacity-0 invisible transition-all duration-500 group-hover:opacity-100 group-hover:visible group-hover:translate-y-10 hover:underline"
             >
               {item.label}

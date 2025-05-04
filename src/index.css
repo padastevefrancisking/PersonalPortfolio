@@ -18,3 +18,17 @@ body {
   width: 100%;
   margin: 0;
 }
+
+button:hover {
+  background-color: #948979;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
