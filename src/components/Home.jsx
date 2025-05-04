@@ -1,9 +1,9 @@
-import '../App.css';
-import Contacts from './Contacts';
+import './../App.css';
+import IconList from './Contacts';
 
-function Home() {
+function Home({id}) {
     return (
-      <div className="w-full max-w-[1200px] bg-secondary-background ">
+      <div id={id} className="w-full max-w-[1200px] bg-secondary-background ">
         <div className="grid justify-center grid-flow-row md:grid-flow-col md:grid-cols-2 px-5 my-12 gap-8">
           {/* Image Section */}
           <div className="flex justify-center lato-light align-middle items-center">
@@ -21,16 +21,22 @@ function Home() {
             </p>
   
             <div className="flex justify-center mt-4">
-              <a href="/PADA_Resume.pdf" download="PADA_Resume.pdf">
-                <button
-                  type="button"
-                  className="text-dark-color border border-secondary-color bg-accent-color hover:bg-secondary-accent-color transition-colors duration-300 ease-in-out lato-regular font-medium rounded-full text-lg px-5 py-2.5 text-center mb-2 shadow-2xl"
-                >
-                  Download Resume
-                </button>
-              </a>
-            </div>
-            <Contacts id="Contacts" />
+              <button
+                type="button"
+                className="bg-accent-color text-dark-color lato-regular py-2 px-4 rounded-full transition-colors duration-300 shadow-lg"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/Pada_Resume.pdf'; // Path to your resume file
+                  link.download = 'Pada_Resume.pdf'; // Name for the downloaded file
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
+                Download Resume
+              </button>
+            </div> 
+            <IconList id="Contacts" />
           </div>
         </div>
       </div>
@@ -38,4 +44,3 @@ function Home() {
   }
 
   export default Home;
-  
