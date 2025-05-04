@@ -1,10 +1,10 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const icons = [
-  { icon: 'bi-mailbox', count: 'padastevefrancisking@gmail.com', label: 'Email', link: '' },
-  { icon: 'bi-facebook', count: 'Steve Francis Casinillo Pada', label: 'Facebook', link: '' },
-  { icon: 'bi-github', count: 'padastevefrancisking', label: 'Github', link: '' },
-  { icon: 'bi-linkedin', count: 'Steve Francis King Pada', label: 'LinkedIn', link: '' },
+  { icon: 'bi-mailbox', count: 'padastevefrancisking@gmail.com', label: 'Email', link: 'mailto:padastevefrancisking@gmail.com' },
+  { icon: 'bi-facebook', count: 'Steve Francis Casinillo Pada', label: 'Facebook', link: 'https://www.facebook.com/steve.pada/' },
+  { icon: 'bi-github', count: 'padastevefrancisking', label: 'Github', link: 'https://github.com/padastevefrancisking' },
+  { icon: 'bi-linkedin', count: 'Steve Francis King Pada', label: 'LinkedIn', link: 'https://www.linkedin.com/in/steve-francis-king-pada-2b7432327/' },
 ];
 
 function IconList() {
