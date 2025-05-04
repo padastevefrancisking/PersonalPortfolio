@@ -24,7 +24,7 @@ function IconList() {
               <span className="absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-[65%] text-[#161616] font-[bootstrap-icons] content-['\F229']" />
             </span>
             <a
-              href="#"
+              href= {item.link}
               className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white opacity-0 invisible transition-all duration-500 group-hover:opacity-100 group-hover:visible group-hover:translate-y-10 hover:underline"
             >
               {item.label}
