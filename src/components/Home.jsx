@@ -21,7 +21,7 @@ function Home() {
             </p>
   
             <div className="flex justify-center mt-4">
-              <a href="../resume/PADA_Resume.pdf" download="PADA_Resume.pdf">
+              <a href="/PADA_Resume.pdf" download="PADA_Resume.pdf">
                 <button
                   type="button"
                   className="text-dark-color border border-secondary-color bg-accent-color hover:bg-secondary-accent-color transition-colors duration-300 ease-in-out lato-regular font-medium rounded-full text-lg px-5 py-2.5 text-center mb-2 shadow-2xl"
