@@ -34,7 +34,7 @@ function Experiences() {
                 href: 'https://github.com/padastevefrancisking/tempest'
             },
             {
-                src: '/public/REKINDLE.png',
+                src: '/REKINDLE.png',
                 title: 'Rekindle',
                 description: 'Aimed to provide an immersive Viscan experience, Rekindle is a desktop game that allows players to explore the Viscan culture and heritage through a series of stories.',
                 href: 'https://github.com/Jhanez27/psyche'
