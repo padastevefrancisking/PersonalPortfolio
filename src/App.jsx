@@ -9,11 +9,7 @@ function App() {
     <>
       <Header />
       <Home id= "Home"/>
-      {/* Add other components here */}
-      {/* <AboutMe /> */}
       <Experiences id="Experiences" />
-      {/* <Contacts /> */}
-      <div id="Contacts"></div>
     </>
   )
 }

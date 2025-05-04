@@ -1,34 +1,34 @@
 function Experiences() {
   return (
-    <div className="flex flex-col justify-center items-center bg-main-background">
+    <div className="flex flex-col justify-center items-center bg-main-background pb-10">
         <div className="flex items-center justify-center text-center py-8 px-4">
             <h1 className="text-4xl leading-tight mb-6 lato-bold text-main-color">
-                My Experiences
+                My Projects
             </h1>
         </div>
         <div className="flex flex-col md:flex-row gap-2.5 w-[87.5%] min-w-[280px] h-[700px] md:max-w-[1050px] md:h-[400px] font-[Calibri]">
             {/* Array of image objects with dynamic title and description */}
             {[
             {
-                src: '/public/STUDYVERSE.png',
+                src: '/STUDYVERSE.png',
                 title: 'StudyVerse',
                 description: 'A C# Desktop Application that proposes a streamlined approach to the Bachelor of Science in Computer Science Mentorship program. As a mentee-powered system, it allows students to post available mentorship requests based on their available time slots, where mentors can view and accept these requests.',
                 href: 'https://github.com/padastevefrancisking/StudyVerse'
             },
             {
-                src: '/public/VSUCOPP.png',
+                src: '/VSUCOPP.png',
                 title: 'VSU - Competitive Online Programming Platform',
                 description: 'The region\'s first of a kind - this platform is designed to manage and host competitive programming contests. It is a web-based platform powered by DomJudge and Docker that allows users to create, manage, and participate in programming contests.',
                 href: 'http://copp.vsu.edu.ph/'
             },
             {
-                src: '/public/FRUITCLASSIFIERCNN.png',
+                src: '/FRUITCLASSIFIERCNN.png',
                 title: 'Fruit Classifier CNN',
                 description: 'Fruit Classifier CNN is a C# Desktop Application that utilizes a Convolutional Neural Network (CNN) to classify fruits. It is trained on a dataset of over 1000 images of 5 various tropical fruits, allowing it to accurately identify and classify different types of fruits.',
                 href: 'https://github.com/padastevefrancisking/fruitclassifier'
             },
             {
-                src: '/public/TEMPEST.png',
+                src: '/TEMPEST.png',
                 title: 'Tempest',
                 description: 'Bringing weather forecasts to life, Tempest is a web-based application that provides real-time weather updates and forecasts. It is designed to be user-friendly and visually appealing, making it easy for users to access the information they need.',
                 href: 'https://github.com/padastevefrancisking/tempest'

@@ -51,7 +51,7 @@ function Header() {
                                     className="flex items-center text-main-color transition-colors duration-300 ease-in-out hover:text-secondary-color whitespace-nowrap"
                                 >
                                     <span className="bx bx-receipt mr-[4px] text-[15px]"/>
-                                    Experiences
+                                    Projects
                                 </a>
                                 <span className="absolute bottom-0 left-0 w-full h-[3px] scale-x-0"/>
                             </li>
@@ -96,7 +96,7 @@ function Header() {
                         const menu = document.getElementById('mobile-menu');
                         menu.classList.add('hidden');
                       }}>
-                        Experiences
+                        Projects
                         </a>
                     </li>
                 <li>
