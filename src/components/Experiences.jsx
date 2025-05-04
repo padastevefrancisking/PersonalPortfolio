@@ -6,7 +6,7 @@ function Experiences() {
                 My Experiences
             </h1>
         </div>
-        <div className="flex flex-col md:flex-row gap-2.5 w-[400px] h-[700px] md:w-[700px] md:h-[400px] font-[Calibri]">
+        <div className="flex flex-col md:flex-row gap-2.5 w-[87.5%] min-w-[280px] h-[700px] md:max-w-[1050px] md:h-[400px] font-[Calibri]">
             {/* Array of image objects with dynamic title and description */}
             {[
             {
@@ -22,22 +22,22 @@ function Experiences() {
                 href: 'http://copp.vsu.edu.ph/'
             },
             {
+                src: '/public/FRUITCLASSIFIERCNN.png',
+                title: 'Fruit Classifier CNN',
+                description: 'Fruit Classifier CNN is a C# Desktop Application that utilizes a Convolutional Neural Network (CNN) to classify fruits. It is trained on a dataset of over 1000 images of 5 various tropical fruits, allowing it to accurately identify and classify different types of fruits.',
+                href: 'https://github.com/padastevefrancisking/fruitclassifier'
+            },
+            {
+                src: '/public/TEMPEST.png',
+                title: 'Tempest',
+                description: 'Bringing weather forecasts to life, Tempest is a web-based application that provides real-time weather updates and forecasts. It is designed to be user-friendly and visually appealing, making it easy for users to access the information they need.',
+                href: 'https://github.com/padastevefrancisking/tempest'
+            },
+            {
                 src: '/public/REKINDLE.png',
                 title: 'Rekindle',
                 description: 'Aimed to provide an immersive Viscan experience, Rekindle is a desktop game that allows players to explore the Viscan culture and heritage through a series of stories.',
                 href: 'https://github.com/Jhanez27/psyche'
-            },
-            {
-                src: 'https://images.unsplash.com/photo-1619080371491-144258310aa5',
-                title: 'Dynamic Title 4',
-                description: 'Fourth image with a custom note.',
-                href: ''
-            },
-            {
-                src: 'https://images.unsplash.com/photo-1619250556999-38af9033f9d4',
-                title: 'Dynamic Title 5',
-                description: 'Final card description goes here.',
-                href: ''
             }
             ].map((item, idx) => (
             // Each card component, stacked vertically

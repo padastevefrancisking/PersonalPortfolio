@@ -1,4 +1,4 @@
-import './../App.css';
+import '../App.css';
 
 function Home() {
     return (
@@ -23,7 +23,7 @@ function Home() {
               <a href="../resume/PADA_Resume.pdf" download="PADA_Resume.pdf">
                 <button
                   type="button"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg md:text-2xl px-5 py-2.5 text-center mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="text-dark-color border border-secondary-color bg-accent-color hover:bg-secondary-accent-color transition-colors duration-300 lato-regular font-medium rounded-full text-lg px-5 py-2.5 text-center mb-2 shadow-2xl"
                 >
                   Download Resume
                 </button>

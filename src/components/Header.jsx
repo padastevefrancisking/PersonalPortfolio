@@ -44,18 +44,6 @@ function Header() {
                                 <span className="absolute bottom-0 left-0 w-full h-[3px] scale-x-0" />
                             </li>
 
-                            {/* About Me */}
-                            <li className="relative">
-                                <a 
-                                    href="#AboutMe" 
-                                    className="flex items-center text-main-color transition-colors duration-300 ease-in-out hover:text-secondary-color whitespace-nowrap"
-                                >
-                                    <span className="bx bx-user-pin mr-[4px] text-[15px] "/>
-                                    About Me
-                                </a>
-                                <span className="absolute bottom-0 left-0 w-full h-[3px] scale-x-0 "/>
-                            </li>
-
                             {/* Experiences */}
                             <li className="relative">
                                 <a 
@@ -98,18 +86,6 @@ function Header() {
                         }}
                     >
                         Home
-                    </a>
-                </li>
-                <li>
-                    <a 
-                        href="#AboutMe" 
-                        className="text-main-color transition-colors duration-300 ease-in-out hover:text-secondary-color"
-                        onClick={() => {
-                            const menu = document.getElementById('mobile-menu');
-                            menu.classList.add('hidden');
-                        }}
-                    >
-                        About Me
                     </a>
                 </li>
                 <li>
