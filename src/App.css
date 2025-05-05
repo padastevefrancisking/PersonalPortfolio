@@ -2,7 +2,7 @@
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 0rem;
   text-align: center;
 }
@@ -31,9 +31,21 @@
   color: #222831;
 }
 
+.text-secondary-dark-color{
+  color: #393e46;
+}
+
 .text-main-color {
   color: #dfd0b8;
 } 
+
+.text-outline {
+  text-shadow: 
+    -1px -1px 0 #222831, /* Top-left shadow */
+     1px -1px 0 #222831, /* Top-right shadow */
+    -1px  1px 0 #222831, /* Bottom-left shadow */
+     1px  1px 0 #222831; /* Bottom-right shadow */
+}
 
 .text-secondary-color {
   color: #948979;
