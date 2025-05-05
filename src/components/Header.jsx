@@ -3,7 +3,7 @@ import '../App.css'
 function Header() {
     return (
         <>
-            <header className= "w-screen h-[60px] bg-main-background lato-regular">
+            <header className= "w-screen h-[60px] bg-main-background lato-regular max-w-[1200px]">
                 <nav className= "w-full h-full px-[5px] gap-x-8 lg:gap-2.5 m-auto max-w-[1200px] grid grid-cols-2">
                     <div className="max-w-[1200px] mx-auto h-full grid grid-cols-[auto_1fr] items-center px-[15px] gap-x-[30px] gap-y-[12px]">
 
