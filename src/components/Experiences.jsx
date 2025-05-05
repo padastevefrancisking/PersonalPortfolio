@@ -15,31 +15,36 @@ function Experiences({id}) {
                 src: '/STUDYVERSE.png',
                 title: 'StudyVerse',
                 description: 'A C# Desktop Application that proposes a streamlined approach to the Bachelor of Science in Computer Science Mentorship program. As a mentee-powered system, it allows students to post available mentorship requests based on their available time slots, where mentors can view and accept these requests.',
-                href: 'https://github.com/padastevefrancisking/StudyVerse'
+                href: 'https://github.com/padastevefrancisking/StudyVerse',
+                tags: ['C#', 'MySQL', 'Full-stack Development', 'Database Management']
             },
             {
                 src: '/VSUCOPP.png',
                 title: 'VSU - Competitive Online Programming Platform',
                 description: 'The region\'s first of a kind - this platform is designed to manage and host competitive programming contests. It is a web-based platform powered by DomJudge and Docker that allows users to create, manage, and participate in programming contests.',
-                href: 'http://copp.vsu.edu.ph/'
+                href: 'http://copp.vsu.edu.ph/',
+                tags: ['Ubuntu', 'Linux', 'Docker', 'Front-end Development']
             },
             {
                 src: '/FRUITCLASSIFIERCNN.png',
                 title: 'Fruit Classifier CNN',
                 description: 'Fruit Classifier CNN is a C# Desktop Application that utilizes a Convolutional Neural Network (CNN) to classify fruits. It is trained on a dataset of over 1000 images of 5 various tropical fruits, allowing it to accurately identify and classify different types of fruits.',
-                href: 'https://github.com/padastevefrancisking/fruitclassifier'
+                href: 'https://github.com/padastevefrancisking/fruitclassifier',
+                tags: ['Python', 'Tensorflow', 'Keras', 'C#', '.NET', 'AI Development']
             },
             {
                 src: '/TEMPEST.png',
                 title: 'Tempest',
                 description: 'Bringing weather forecasts to life, Tempest is a web-based application that provides real-time weather updates and forecasts. It is designed to be user-friendly and visually appealing, making it easy for users to access the information they need.',
-                href: 'https://github.com/padastevefrancisking/tempest'
+                href: 'https://github.com/padastevefrancisking/tempest',
+                tags: ['HTML', 'CSS', 'ReactJS', 'OpenWeatherMap', 'Web Development', 'API Integration']
             },
             {
                 src: '/REKINDLE.png',
                 title: 'Rekindle',
                 description: 'Aimed to provide an immersive Viscan experience, Rekindle is a desktop game that allows players to explore the Viscan culture and heritage through a series of stories.',
-                href: 'https://github.com/Jhanez27/psyche'
+                href: 'https://github.com/Jhanez27/psyche',
+                tags: ['C#', 'Ink', 'Unity Technologies', 'Game Development', 'Version Control']
             }
             ].map((item, idx) => (
             // Each card component, stacked vertically
@@ -55,16 +60,28 @@ function Experiences({id}) {
                 />
 
                 {/* Text overlay that slides up on hover */}
-                <div className="absolute bottom-0 w-full text-white p-4 text-justify translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-in-out bg-gradient-to-b from-transparent via-black/60 to-black ">
+                <div className="absolute bottom-0 w-full text-white p-4 pt-8 text-justify translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-in-out bg-gradient-to-b from-transparent via-black/60 to-black ">
                 {/* Clickable title */}
                 <a href={item.href} className="text-white hover:underline">
-                    <h3 className="mb-2 text-white">{item.title}</h3>
+                    <h3 className="mb-2 text-main-color lato-bold text-outline">{item.title}</h3>
                 </a>
 
                 {/* Dynamic description */}
                 <span className="text-[12px] text-neutral-300">
                     {item.description}
                 </span>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mt-4">
+                    {item.tags.map((tag, tagIdx) => (
+                        <span
+                        key={tagIdx}
+                        className="bg-secondary-background text-white text-[10px] px-2 py-1 rounded-full"
+                        >
+                        {tag}
+                        </span>
+                    ))}
+                    </div>
                 </div>
             </div>
             ))}
