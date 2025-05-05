@@ -37,7 +37,7 @@ function Experiences({id}) {
                 title: 'Tempest',
                 description: 'Bringing weather forecasts to life, Tempest is a web-based application that provides real-time weather updates and forecasts. It is designed to be user-friendly and visually appealing, making it easy for users to access the information they need.',
                 href: 'https://github.com/padastevefrancisking/tempest',
-                tags: ['HTML', 'CSS', 'ReactJS', 'OpenWeatherMap', 'Web Development', 'API Integration']
+                tags: ['HTML', 'TailwindCSS', 'ReactJS', 'OpenWeatherMap', 'Web Development', 'API Integration']
             },
             {
                 src: '/REKINDLE.png',

@@ -1,9 +1,16 @@
 import '../App.css'
 
 function Header() {
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start'});
+        }
+    }
+
     return (
         <>
-            <header className= "w-screen h-[60px] bg-main-background lato-regular">
+            <header className= "w-screen h-[60px] bg-main-background lato-regular max-w-[1200px]">
                 <nav className= "w-full h-full px-[5px] gap-x-8 lg:gap-2.5 m-auto max-w-[1200px] grid grid-cols-2">
                     <div className="max-w-[1200px] mx-auto h-full grid grid-cols-[auto_1fr] items-center px-[15px] gap-x-[30px] gap-y-[12px]">
 
@@ -34,37 +41,35 @@ function Header() {
                         <ul className="hidden lg:flex items-center gap-[25px] text-[17px] h-full justify-end lato-regular">
                             {/* Home */}
                             <li className="relative">
-                                <a 
-                                    href="#Home"
-                                    className="flex items-center text-main-color transition-colors duration-300 ease-in-out hover:text-secondary-color whitespace-nowrap"
-                                >
-                                    <span className="bx bx-home mr-[4px] text-[15px]"/>
-                                    Home
-                                </a>
-                                <span className="absolute bottom-0 left-0 w-full h-[3px] scale-x-0" />
+                            <button
+                                onClick={() => handleScroll('Home')}
+                                className="flex items-center text-main-color transition-colors duration-500 ease-in-out hover:text-secondary-color whitespace-nowrap"
+                            >
+                                <span className="bx bx-home mr-[4px] text-[15px]" />
+                                Home
+                            </button>
                             </li>
 
                             {/* Experiences */}
                             <li className="relative">
-                                <a 
-                                    href="#Experiences" 
-                                    className="flex items-center text-main-color transition-colors duration-300 ease-in-out hover:text-secondary-color whitespace-nowrap"
+                                <button
+                                    onClick={() => handleScroll('Experiences')}
+                                    className="flex items-center text-main-color transition-colors duration-500 ease-in-out hover:text-secondary-color whitespace-nowrap"
                                 >
-                                    <span className="bx bx-receipt mr-[4px] text-[15px]"/>
+                                    <span className="bx bx-home mr-[4px] text-[15px]" />
                                     Projects
-                                </a>
-                                <span className="absolute bottom-0 left-0 w-full h-[3px] scale-x-0"/>
+                                </button>
                             </li>
 
                             {/* Contacts */}
                             <li className="relative">
-                                <a
-                                    href="#Contacts"
-                                    className="flex items-center text-main-color transition-colors duration-300 ease-in-out hover:text-secondary-color whitespace-nowrap"
+                                <button
+                                    onClick={() => handleScroll('Contacts')}
+                                    className="flex items-center text-main-color transition-colors duration-500 ease-in-out hover:text-secondary-color whitespace-nowrap"
                                 >
-                                    <span className="bx bx-message-rounded-dots mr-[4px] text-[15px]"/> Contacts
-                                </a>
-                                <span className="absolute bottom-0 left-0 w-full h-[3px] scale-x-0"/>
+                                    <span className="bx bx-home mr-[4px] text-[15px]" />
+                                    Contacts
+                                </button>
                             </li>
                         </ul>
                     </div>

@@ -19,7 +19,7 @@ body {
   margin: 0;
 }
 
-button:hover {
+#Home button:hover {
   background-color: #948979;
 }
 
